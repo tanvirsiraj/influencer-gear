@@ -119,6 +119,21 @@ main {
     background-position: center center;
 }
 
+/* ---------------------------
+    partner company section   
+-------------------------------*/
+.partner-company {
+    padding-block: 100px;
+    display: grid;
+    column-gap: 60px;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+}
+
+.partner-company div img {
+    width: 100%;
+}
+
 /* ------------------
     media queries  
 ---------------------*/
@@ -209,6 +224,13 @@ main {
         line-height: 21px;
     }
 
+    /* partner company section    */
+
+    .partner-company {
+        column-gap: 30px;
+        row-gap: 22px;
+        grid-template-columns: repeat(4, 1fr);
+    }
 
 }
 
@@ -291,5 +313,13 @@ main {
 
     .hero-description {
         margin-inline: auto;
+    }
+
+    /* partner company section    */
+
+    .partner-company {
+        column-gap: 30px;
+        row-gap: 22px;
+        grid-template-columns: repeat(5, 1fr);
     }
 }
